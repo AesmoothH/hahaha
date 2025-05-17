@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huh?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        div.box {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: rgb(37, 133, 177);
+        }
+
+        .random {
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="arena"></div>
+    <script type="module">
+        import { random } from "./script/catto.js";
+        import {evenKey} from "./script/evekey.js";
+
+        random.show();
+
+        evenKey();
+    </script>
+</body>
+</html>
